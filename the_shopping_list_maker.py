@@ -20,19 +20,19 @@ shopping_list = []
 
 print ("This program allows you to manage and view your shopping list!")
 
-while True:
+while True: #use a while true loop to create a infinite loop and use a "quit" option to provide easy exit from the list
     user_request = input("Would you like to do with your list?(add/remove/print):\n*Type 'quit' to exit* ").lower
     if user_request() == "quit":
         break
-    elif user_request() == "add":
+    elif user_request() == "add": #use add function
         new_item = input("What would you like to add? ")
         add(shopping_list,new_item)
-    elif user_request() == "remove":
+    elif user_request() == "remove": #use remove function
         item_to_be_removed = input("What would you like to remove? ")
         remove(shopping_list,item_to_be_removed)
-    elif user_request() == "print":
+    elif user_request() == "print": #use print function
         print_list(shopping_list)
-    else:
+    else: #provide a catch all for other responses to direct user to reattempt input
         print("User response not registered. Please input enter one of the following:\nprint, add, remove, or quit")
-#use a while true loop to create a infinite loop and use a "quit" option to provide easy exit from the list
+
 #Note: The goal of this is to be a program. The recommendation is to use a while loop that will allow the user to continue to add, remove, and print off their shopping list until they decide to "quit", also known as breaking the loop.
