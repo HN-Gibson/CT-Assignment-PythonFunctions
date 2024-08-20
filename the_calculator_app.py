@@ -18,7 +18,7 @@ def div(number1, number2): #created a division function
     return newnumber
 
 # Task 2: Use inputs to ask the user what operation they want to perform, and what numbers they want to use.
-print("This program with perform basic math functions.")
+print("This program will perform basic math functions.")
 
 while True: #added a while true infinite loop so the user could repeat for different functions more easily while providing an exit in the "quit" option   
     user_operation = input ("Please enter the operation you would like to perform or type 'quit' to exit.\n(addition/subtraction/multiplication/division): ").lower #asked for user input of what operation to perform converted to lowercase to account for case issues
